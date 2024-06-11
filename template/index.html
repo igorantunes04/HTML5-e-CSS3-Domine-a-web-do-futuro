@@ -12,14 +12,16 @@
 <body>
   <div class='container'>
     <!-- Todo o corpo da página vem aqui... -->
-    <h1>
-      <a href='links_livro.html'>Livros e Documentos</a>
-    </h1>
+    <header>
+      <h1>
+        <a href='links_livro.html'>Livros e Documentos</a>
+      </h1>
+    </header>
 
     <div class='places'>
       <!-- conteúdo principal vem aqui... -->
 
-      <div class='place'>
+      <article>
         <!-- O título e a descrição da Avenida Paulista... -->
 
         <h2>Passear na Avenida Paulista!</h2>
@@ -37,9 +39,9 @@
           respeito no <a href='https://twitter.com/#!/search/Avenida Paulista' target='_blank'>Twitter</a>?
         </p>
         <div class='clear'></div>
-      </div>
+      </article>
 
-      <div class='place'>
+      <article>
         <!-- O título e a descrição da Vila Madalena... -->
         <h2>Os bares da Vila Madalena</h2>
         <img src='images/piola.jpg' alt="A varanda do Armazém Piola, foto por Fernando Moraes">
@@ -56,9 +58,9 @@
           </a>
         </p>
         <div class='clear'></div>
-      </div>
+      </article>
 
-      <div class='place'>
+      <article>
         <!-- O título e a descrição do Parque do Ibirapuera... -->
         <h2>O Parque do Ibirapuera</h2>
         <img src='images/ibirapuera.jpg' alt="O Parque do Ibirapuera,por http://www.flickr.com/photos/soldon/">
@@ -74,9 +76,10 @@
           como chegar ao parque.
         </p>
         <div class='clear'></div>
-      </div>
+      </article>
     </div>
-    <div class='sidenote'>
+
+    <aside>
       <h3>E existem muitos outros lugares interessantes na cidade...</h3>
       <ol>
         <li>O Mercado Municipal.</li>
@@ -87,15 +90,14 @@
         </li>
         <li>E mais!</li>
       </ol>
-    </div>
-    
-    <div class='footer clear'>
-      <p>Parte do livro "HTML5 e CSS3: Domine a web do futuro."</p>
-    </div>
-  </div>
+    </aside>
 
-  <!-- O seu HTML vem aqui! -->
-  <script src='jquery.min.js'></script>
+    <footer class='clear'>
+      <p>Parte do livro "HTML5 e CSS3: Domine a web do futuro."</p>
+    </footer>
+
+    <!-- O seu HTML vem aqui! -->
+    <script src='jquery.min.js'></script>
 </body>
 
 </html>
