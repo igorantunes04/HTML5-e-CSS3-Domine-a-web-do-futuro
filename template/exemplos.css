@@ -1,0 +1,524 @@
+section {
+    border: 1px solid #000;
+    height: 100px;
+    margin: 40px auto;
+    width: 400px;
+}
+
+.h1-capitulo-4 {
+    background-color: #990000;
+    color: #FFF;
+    font-size: 1.2em;
+    left: -10px;
+    padding: 5px 0;
+    position: relative;
+    text-align: center;
+    width: 420px;
+}
+
+h1::before {
+    border-color: transparent #7C0000 #7C0000 transparent;
+    border-style: solid;
+    border-width: 5px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: -10px;
+}
+
+h1::after {
+    border-color: transparent transparent #7C0000 #7C0000;
+    border-style: solid;
+    border-width: 5px;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -10px;
+}
+
+.help {
+    background-color: #F1EFE6;
+    border: 1px solid #D3CDAE;
+    font-size: 0.9em;
+    padding: 10px;
+    position: relative;
+    width: 300px;
+    box-shadow: 3px 3px 3px #AAA;
+}
+
+.help::before {
+    border-color: transparent #D3CDAE transparent transparent;
+    border-style: solid;
+    border-width: 14px;
+    content: "";
+    left: -28px;
+    margin-top: -14px;
+    position: absolute;
+    top: 50%;
+}
+
+.tip::before {
+    content: "\261E";
+    margin-right: 10px;
+}
+
+blockquote {
+    color: #444;
+    font-style: italic;
+}
+
+blockquote::before,
+blockquote::after {
+    color: #000;
+    font-size: 3em;
+}
+
+blockquote::before {
+    content: "\201C";
+}
+
+blockquote::after {
+    content: "\201D";
+}
+
+.button {
+    background-color: #999999;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.primary-button {
+    background-color: #389739;
+}
+
+.big-button {
+    font-size: 1.1em;
+}
+
+.small-button {
+    font-size: 0.9em;
+}
+
+@media print {
+    /* Este CSS só será aplicado quando a página for impressa */
+}
+
+table {
+    width: 500px;
+}
+
+td {
+    border: 1px dotted #666;
+    padding: 5px;
+}
+
+td a {
+    color: #3B5998;
+}
+
+.expense,
+.profit,
+.actions {
+    text-align: right;
+}
+
+.expense,
+.profit {
+    font-weight: bold;
+}
+
+.expense {
+    color: red;
+}
+
+.profit {
+    color: green;
+}
+
+.actions a {
+    font-size: 0.9em;
+    color: white;
+    padding: 2px 5px;
+    background-color: #3B5998;
+    text-decoration: none;
+}
+
+.h1-capitulo-5-2 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+@media print {
+    * {
+        color: #000 !important;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        border-color: #000;
+    }
+
+    a::after {
+        content: "(" attr(href) ")";
+        margin-left: 2px;
+    }
+
+    .actions {
+        display: none;
+    }
+
+    .expense::before {
+        content: "- ";
+    }
+
+    .expense::after {
+        content: " - Despesa";
+    }
+
+    .profit::before {
+        content: "+ ";
+    }
+
+    .profit::after {
+        content: " - Receita";
+    }
+}
+
+@font-face {
+    font-family: 'IconicFill';
+    src: url('iconic_fill.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon-next::after {
+    content: '\2192';
+    font-family: 'IconicFill';
+    margin-left: 10px;
+}
+
+h1.icon-next {
+    color: blue;
+}
+
+.icon-ok {
+    color: #489D00;
+}
+
+.icon-ok::before {
+    content: "\2714";
+    font-family: 'IconicFill';
+    margin-right: 10px;
+}
+
+.icon-invalid {
+    color: #990000;
+}
+
+.icon-invalid::before {
+    content: "\2718";
+    font-family: 'IconicFill';
+    margin-right: 10px;
+}
+
+.tnt {
+    border-radius: 50%;
+    border: 5px solid #000;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+}
+
+.counter {
+    background-color: #000;
+    border-top-left-radius: 25px 10px;
+    border-top-right-radius: 25px 10px;
+    color: white;
+    display: block;
+    font-size: 1.7em;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+}
+
+.div-cloud {
+    background-color: #000;
+    width: 50px;
+    height: 10px;
+    padding: 20px 50px;
+}
+
+.cloud {
+    background-color: #FFF;
+    border-radius: 48px;
+    display: inline-block;
+    height: 16px;
+    position: relative;
+    width: 48px;
+}
+
+.cloud::before {
+    background-color: #FFF;
+    border-radius: 50%;
+    content: '';
+    height: 14px;
+    position: absolute;
+    right: 7px;
+    top: -6px;
+    width: 14px;
+}
+
+.cloud::before,
+.cloud::after {
+    background-color: #FFF;
+    border-radius: 50%;
+    content: '';
+    height: 14px;
+    position: absolute;
+    right: 7px;
+    top: -6px;
+    width: 14px;
+}
+
+.cloud::after {
+    background-color: #FFF;
+    height: 23px;
+    left: 7px;
+    right: auto;
+    top: -10px;
+    width: 23px;
+}
+
+.figure-5-5 {
+    position: relative;
+}
+
+.img-5-5 {
+    display: block;
+}
+
+.figcaption-5-5 {
+    bottom: 5px;
+    margin: 0 5px;
+    padding: 5px;
+    position: absolute;
+    width: 300px;
+    color: white;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+}
+
+.ul-5-5 {
+    height: 35px;
+    list-style: none;
+    padding: 0;
+    width: 210px;
+    background-color: #CCC;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.li-5-5 {
+    float: left;
+    line-height: 35px;
+    font-size: 0.9em;
+    width: 50px;
+    text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.li-5-5:first-child {
+    border-left: none;
+}
+
+.li-5-5:last-child {
+    border-right: none;
+}
+
+.div-5-5-linear-gradient {
+    font-weight: bold;
+    height: 50px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 220px;
+}
+
+.blue {
+    background-image: linear-gradient(top, #4377FA, #0537B7);
+}
+
+.reverse-blue {
+    background-image: linear-gradient(top, #0537B7, #4377FA);
+}
+
+.omg-pink {
+    background-image: linear-gradient(top right, #FC0050, #FF79A3);
+}
+
+.stops {
+    background-image: linear-gradient(top, #F5B951 48%, #F2A31C 56%);
+}
+
+.input-5-6 {
+    border: 1px solid #999;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25) inset;
+    padding: 2px 5px;
+}
+
+.input-5-6:focus {
+    border-color: #35861B;
+    box-shadow: 0 0 5px #35861B;
+    outline: none;
+}
+
+.nav-5-6 {
+    background-color: #B9522D;
+    height: 30px;
+    list-style: none;
+    padding: 0;
+    width: 210px;
+}
+
+.nav-5-6 li {
+    float: left;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 70px;
+}
+
+.nav-5-6 a {
+    color: white;
+}
+
+.nav-5-6 .current {
+    background-color: #A64A28;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.h1-5-6 {
+    background-color: #1D9AC0;
+    color: #FFF;
+    padding: 10px;
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.status-5-6 {
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    font-weight: bold;
+    padding: 7px 10px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.failed {
+    background-color: #BD2C00;
+}
+
+.shipped {
+    background-color: #6CC644;
+}
+
+.processing {
+    background-color: #FC9800;
+}
+
+.h1-5-6-book {
+    color: #BD2C00;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.h2-5-6-book {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.available-5-6 {
+    background-color: #6CC644;
+    border-radius: 3px;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 3px 7px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.ul-5-6 {
+    background-color: #56B4EF;
+    background-image: linear-gradient(top, #56B4EF, #148EDA);
+    float: left;
+    list-style: none;
+    margin: 10px 10px 0 0;
+    padding: 0;
+    width: 230px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.icon-5-6 {
+    color: #FFF;
+    display: block;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.icon-5-6::before {
+    font-family: 'IconicFill';
+    margin: 0px 5px;
+}
+
+.paper-5-6::before {
+    content: "\e00b";
+}
+
+.digital-5-6::before {
+    content: "\e044";
+}
+
+.package-5-6::before {
+    content: "\e022";
+}
+
+.icon-5-6.pape-5-6 {
+    border-top: none;
+}
+
+.icon-5-6.package-5-6 {
+    border-bottom: none;
+}
+
+.icon-5-6:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.book-5-6 {
+    background-color: #FAFAFA;
+    background-image: linear-gradient(#FAFAFA, #EEE);
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    padding: 10px;
+    width: 600px;
+}
+
+.clear-5-6 {
+    clear: both;
+}
