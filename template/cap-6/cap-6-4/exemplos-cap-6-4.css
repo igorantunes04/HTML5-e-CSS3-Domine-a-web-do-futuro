@@ -1,0 +1,20 @@
+.box-6-4 {
+    background-color: PapayaWhip;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 30px;
+    left: 5px;
+}
+
+.h1-6-4 {
+    background-color: LightBlue;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.header-6-4 {
+    margin-top: 30px;
+    position: relative;
+}

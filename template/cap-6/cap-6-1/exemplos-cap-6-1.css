@@ -1,0 +1,11 @@
+.p-6-1 {
+    background-color: LimeGreen;
+}
+
+.span-6-1 {
+    background-color: LightBlue;
+}
+
+.span-6-1-inline-block {
+    display: inline-block;
+}
