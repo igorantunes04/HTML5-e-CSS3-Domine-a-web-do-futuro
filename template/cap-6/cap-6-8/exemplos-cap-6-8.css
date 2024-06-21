@@ -1,0 +1,43 @@
+.p-6-8 {
+    column-count: 3;
+    column-gap: 10px;
+    column-rule: 1px solid #666;
+    font-size: 0.9em;
+    width: 500px;
+}
+
+.flexbox-6-8 {
+    display: flex;
+    height: 60px;
+    width: 300px;
+}
+
+.box-6-8 {
+    color: #FFF;
+    display: block;
+    flex: auto;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.one-6-8 {
+    background-color: #8820DD;
+}
+
+.two-6-8 {
+    background-color: #2BB15A;
+}
+
+.three-6-8 {
+    background-color: #755322;
+}
+
+.four-6-8 {
+    background-color: #02A3A3;
+}
+
+.five-6-8 {
+    background-color: #C6363D;
+}
