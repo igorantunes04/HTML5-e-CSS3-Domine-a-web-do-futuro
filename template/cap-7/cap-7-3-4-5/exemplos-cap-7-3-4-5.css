@@ -1,0 +1,41 @@
+.label-7-3-4-5 {
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: bold;
+    width: 90px;
+}
+
+.input-7-3-4-5,
+.textarea-7-3-4-5 {
+    display: inline-block;
+    width: 200px;
+}
+
+.textarea-7-3-4-5 {
+    height: 100px;
+}
+
+.input-7-3-4-5,
+.textarea-7-3-4-5 {
+    border: 1px solid #CCC;
+    box-shadow: inset 2px 2px 2px #EEE;
+    font-size: 0.9em;
+    padding: 2px 5px;
+}
+
+.hint-7-3-4-5 {
+    background-color: #FFFBE4;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    font-size: 0.8em;
+    margin-left: 20px;
+    padding: 3px;
+    display: none;
+}
+
+.input-7-3-4-5:focus+.hint-7-3-4-5,
+textarea:focus+.hint {
+    display: inline-block;
+}
