@@ -1,29 +1,29 @@
-.label-7-3-4-5 {
+.label-7-3-4-5-6-7 {
     display: inline-block;
     font-size: 0.9em;
     font-weight: bold;
     width: 90px;
 }
 
-.input-7-3-4-5,
-.textarea-7-3-4-5 {
+.input-7-3-4-5-6-7,
+.textarea-7-3-4-5-6-7 {
     display: inline-block;
     width: 200px;
 }
 
-.textarea-7-3-4-5 {
+.textarea-7-3-4-5-6-7 {
     height: 100px;
 }
 
-.input-7-3-4-5,
-.textarea-7-3-4-5 {
+.input-7-3-4-5-6-7,
+.textarea-7-3-4-5-6-7 {
     border: 1px solid #CCC;
     box-shadow: inset 2px 2px 2px #EEE;
     font-size: 0.9em;
     padding: 2px 5px;
 }
 
-.hint-7-3-4-5 {
+.hint-7-3-4-5-6-7 {
     background-color: #FFFBE4;
     border-radius: 3px;
     border: 1px solid #CCC;
@@ -35,7 +35,15 @@
     display: none;
 }
 
-.input-7-3-4-5:focus+.hint-7-3-4-5,
+.input-7-3-4-5-6-7:focus+.hint-7-3-4-5-6-7,
 textarea:focus+.hint {
     display: inline-block;
+}
+
+.error-7-3-4-5-6-7 {
+    color: red;
+    display: block;
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 5px 0 0 90px;
 }
